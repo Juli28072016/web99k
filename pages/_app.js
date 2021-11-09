@@ -7,10 +7,12 @@ function MyApp({ Component, pageProps }) {
   return (
     <Layout>
       <Component {...pageProps} />
-      <MessengerCustomerChat
-        pageId="102453745271672"
-        appId="387474772900051"
-      />
+      <div className="transition duration-500 ease transform hover:-translate-y-1">
+        <MessengerCustomerChat
+          pageId="102453745271672"
+          appId="387474772900051"
+        />
+      </div>
     </Layout>
   );
 }
